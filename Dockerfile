@@ -11,6 +11,8 @@ ENV TZ=UTC
 
 ADD ./start.sh /tmp/start.sh
 ADD ./backup.sh /tmp/backup.sh
+RUN chmod +x /tmp/start.sh
+RUN chmod +x /tmp/backup.sh
 
 RUN mkdir /source
 RUN mkdir /target
